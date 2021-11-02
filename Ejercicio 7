@@ -1,0 +1,179 @@
+#include <stdio.h>
+
+int main()
+{
+    int op, oplon, opvol, opmas;
+    float lon, vol, mas, lonfin, volfin, masfin;
+    printf("\tConversiones\n\n");
+    printf("Elija el tipo de conversión que se desea hacer:\n");
+    printf("1) Longitud\n");
+    printf("2) Volumen\n");
+    printf("3) Masa\n");
+    scanf("%d",&op);
+    printf("\n");
+    switch (op)
+    {
+        case 1:
+        printf("Se seleccionó 'Longitud'.\n");
+        printf("Elija la conversión que desea realizar:\n");
+            printf("1) Pulgadas a milímetros\n");
+            printf("2) Yardas a metros\n");
+            printf("3) Millas a kilómetros\n");
+            printf("4) Pulgadas^2 a centímetros^2\n");
+            printf("5) Pies^2 a metros^2\n");
+            printf("6) Yardas^2 a metros^2\n");
+            printf("7) Acres a hectáreas\n");
+            printf("8) Millas^2 a kilómetros^2\n");
+            scanf("%d", &oplon);
+            printf("\n");
+            switch (oplon)
+            {
+                case 1:
+                    printf("Ingrese la cantidad en pulgadas:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 25.40;
+                    printf("%f pulgadas es igual a %f milímetros.\n", lon, lonfin);
+                    break;
+                    
+                case 2:
+                    printf("Ingrese la cantidad en yardas:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 0.9144;
+                    printf("%f yardas es igual a %f metros.\n", lon, lonfin);
+                    break;
+                    
+                case 3:
+                    printf("Ingrese la cantidad en millas:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 1.6093;
+                    printf("%f millas es igual a %f kilómetros.\n", lon, lonfin);
+                    break;
+                    
+                case 4:
+                    printf("Ingrese la cantidad en pulgadas^2:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 6.452;
+                    printf("%f pulgadas^2 es igual a %f centímetros^2.\n", lon, lonfin);
+                    break;
+                    
+                case 5:
+                    printf("Ingrese la cantidad en pies^2:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 0.09290;
+                    printf("%f pies^2 es igual a %f metros^2.\n", lon, lonfin);
+                    break;
+                    
+                case 6:
+                    printf("Ingrese la cantidad en yardas^2:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 0.8361;
+                    printf("%f yardas^2 es igual a %f metros^2.\n", lon, lonfin);
+                    break;
+                    
+                case 7:
+                    printf("Ingrese la cantidad en acres:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 0.4047;
+                    printf("%f acres es igual a %f hectáreas.\n", lon, lonfin);
+                    break;
+                    
+                case 8:
+                    printf("Ingrese la cantidad en millas^2:\n");
+                    scanf("%f", &lon);
+                    lonfin = lon * 2.59;
+                    printf("%f millas^2 es igual a %f kilómetros^2.\n", lon, lonfin);
+                    break;
+                    
+                default:
+                printf("La opción no existe.\n");
+            }
+            break;
+            
+        case 2:
+        printf("Se seleccionó 'Volumen'.\n");
+        printf("Elija la conversión que desea realizar:\n");
+            printf("1) Pies^3 a metros^3\n");
+            printf("2) Yardas^3 a metros^3\n");
+            printf("3) Pintas a litros\n");
+            printf("4) Galones a litros\n");
+            scanf("%d", &opvol);
+            printf("\n");
+            switch (opvol)
+            {
+                case 1:
+                    printf("Ingrese la cantidad en pies^3:\n");
+                    scanf("%f", &vol);
+                    volfin = vol * 0.02832;
+                    printf("%f pies^3 es igual a %f metros^3.\n", vol, volfin);
+                    break;
+                    
+                case 2:
+                    printf("Ingrese la cantidad en yardas^3:\n");
+                    scanf("%f", &vol);
+                    volfin = vol * 0.7646;
+                    printf("%f yardas^3 es igual a %f metros^3.\n", vol, volfin);
+                    break;
+                    
+                case 3:
+                    printf("Ingrese la cantidad en pintas:\n");
+                    scanf("%f", &vol);
+                    volfin = vol * 0.56826;
+                    printf("%f pintas es igual a %f litros.\n", vol, volfin);
+                    break;
+                    
+                case 4:
+                    printf("Ingrese la cantidad en galones:\n");
+                    scanf("%f", &vol);
+                    volfin = vol * 4.54609;
+                    printf("%f galones es igual a %f litros.\n", vol, volfin);
+                    break;
+                    
+                default:
+                printf("La opción no existe.\n");
+            }
+            
+            break;
+            
+        case 3:
+        printf("Se seleccionó 'Masa'.\n");
+        printf("Elija la conversión que desea realizar:\n");
+            printf("1) Onzas a gramos\n");
+            printf("2) Libras a kilogramos\n");
+            printf("3) Ton. inglesas a toneladas\n");
+            scanf("%d", &opmas);
+            printf("\n");
+            switch (opmas)
+            {
+                case 1:
+                    printf("Ingrese la cantidad en onzas:\n");
+                    scanf("%f", &mas);
+                    masfin = mas * 28.35;
+                    printf("%f onzas es igual a %f gramos.\n", mas, masfin);
+                    break;
+                    
+                case 2:
+                    printf("Ingrese la cantidad en libras:\n");
+                    scanf("%f", &mas);
+                    masfin = mas * 0.45359;
+                    printf("%f libras es igual a %f kilogramos.\n", mas, masfin);
+                    break;
+                    
+                case 3:
+                    printf("Ingrese la cantidad en ton. inglesas:\n");
+                    scanf("%f", &mas);
+                    masfin = mas * 1.0160;
+                    printf("%f ton. inglesas es igual a %f toneladas.\n", mas, masfin);
+                    break;
+                    
+                default:
+                printf("La opción no existe.\n");
+            }
+            
+            break;
+            
+        default:
+        printf("La opción no existe.\n");
+    }
+    printf("\n");
+    return 0;
+}
